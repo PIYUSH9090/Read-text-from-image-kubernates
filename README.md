@@ -61,12 +61,17 @@ gcloud container clusters create translator3 --num-nodes=2 --zone us-east1-b
 gcloud container clusters get-credentials translator3 --zone us-east1-b --project readtext-621999
 ```
 
-14)Deploy the yaml file
+14) We have to set the path in k8s folder
+```
+cd k8s
+```
+
+15)Deploy the yaml file
 ```
 kubectl apply -f deployment.yaml --record=true
 ```
 
-15) Get the pods
+16) Get the pods
 ```
 kubectl get pods
 ```

@@ -66,7 +66,7 @@ gcloud container clusters get-credentials translator3 --zone us-east1-b --projec
 cd k8s
 ```
 
-15)Deploy the yaml file
+15) Deploy the yaml file
 ```
 kubectl apply -f deployment.yaml --record=true
 ```
